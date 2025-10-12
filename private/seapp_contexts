@@ -220,3 +220,6 @@ user=_app isPrivApp=true name=com.android.virtualization.terminal domain=vmlaunc
 user=_app isPrivApp=true name=com.android.virtualization.terminal:* domain=vmlauncher_app type=privapp_data_file levelFrom=all
 user=_app isPrivApp=true name=com.google.android.adservices.api domain=adservices type=privapp_data_file levelFrom=all
 user=_pcc_component domain=pcc_component type=pcc_data_file levelFrom=all
+
+# Updater
+user=_app isPrivApp=true seinfo=platform name=net.pixelos.ota domain=updater_app type=app_data_file levelFrom=user
