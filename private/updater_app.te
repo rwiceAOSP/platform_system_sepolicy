@@ -21,6 +21,9 @@ allow updater_app cache_recovery_file:file create_file_perms;
 allow updater_app ota_package_file:dir create_dir_perms;
 allow updater_app ota_package_file:file create_file_perms;
 
+# Allow the Updater to discover Android's system update service.
+allow updater_app system_update_service:service_manager find;
+
 get_prop(updater_app, build_prop)
 get_prop(updater_app, default_prop)
 set_prop(updater_app, recovery_update_prop)
